@@ -1,0 +1,10 @@
+<div class="users-chat">
+  <ul>
+    <li *ngFor="let chat of chat$ | async">
+      {{chat.message}}
+    </li>
+  </ul>
+</div>
+<div class="users-type">
+  <app-users-type></app-users-type>
+</div>

@@ -1,0 +1,58 @@
+.users-room{
+    height: 100vh;
+    border-right: solid 1px #ebebeb;
+}
+
+.users-room ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.users-room ul li {
+    cursor: pointer;
+    padding: .75rem;
+    display: flex;
+    margin: 0;
+    gap: .5rem;
+    align-items: center;
+    align-content: center;
+    border-bottom: solid 1px #ebebeb;
+}
+.users-room ul li.active{
+    border-right: solid 2px rgb(0, 132, 255);
+}
+
+.users-room ul li:hover{
+    background-color: #fafafa;
+}
+
+.users-room ul li:last-child{
+    border-color: transparent;
+}
+
+
+
+.users-room .user-item .user-avatar{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.users-room .user-item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+
+.users-room .user-item .user-name{
+    font-weight: 600;
+}
+.users-room .user-item .user-pre-message{
+    font-weight: 400;
+    font-size: .85rem;
+}

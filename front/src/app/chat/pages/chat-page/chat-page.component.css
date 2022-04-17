@@ -1,0 +1,9 @@
+.chat-page{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.chat-page .block-right{
+    position: relative;
+    background-color: #fafafa;
+}

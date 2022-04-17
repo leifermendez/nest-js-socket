@@ -1,0 +1,13 @@
+<div class="users-room">
+  <ul>
+    <li routerLinkActive="active" [routerLink]="['/','chat',user.id]" class="user-item" *ngFor="let user of users$ | async">
+      <div class="user-avatar">
+        <img [src]="user.avatar" alt="" />
+      </div>
+      <div class="user-detail">
+        <div class="user-name">{{user.name}}</div>
+        <div class="user-pre-message">{{user.slogan}}</div>
+      </div>
+    </li>
+  </ul>
+</div>
